@@ -1,0 +1,101 @@
+body {
+    background-color:#1a1717;
+}
+ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color:black;
+}
+li{
+    float: left;
+    border-right:1px solid darkred;
+}
+li:last-child{
+   border-right:none;
+}
+li a{
+    display:block;
+    color:white;
+    text-align: center;
+    padding:14px 16px;
+    text-decoration: noen;
+}
+li a:hover:not(.active){
+    background-color: darkred;
+}
+.daimei{
+    font-size: 50px;
+    text-align: center;
+    position:absolute;
+    top: 20%;
+    left: 43%;
+}
+.subtitle {
+font-size: 40px;
+font-weight: bold;
+animation-name: fadein;
+animation-duration: 3s;
+position:absolute;
+top:27%;
+left:47%;
+}
+@keyframes fadein {
+from {
+opacity: 0;
+transform: translateY(20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+p{
+    background: -webkit-linear-gradient(top,#CCCCCC 0%, #990000 50%, #660033 51%, #440000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.naiyou{
+    position:absolute;
+    color:darkred;
+    top:50%;
+    left:60%;
+}
+.ggmap {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.ggmap iframe,
+.ggmap object,
+.ggmap embed {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    width: 45%;
+    height: 45%;
+}
+.annnai{
+    font-size:25px;
+    color: white;
+    font-weight: bold;
+    animation-name: fadein;
+    animation-duration: 3s;
+    position:absolute;
+    top:45%;
+    left:55%;
+    }
+    @keyframes fadein {
+    from {
+    opacity: 0;
+    transform: translateY(20px);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
