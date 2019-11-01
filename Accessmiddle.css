@@ -65,10 +65,10 @@ p{
 .ggmap object,
 .ggmap embed {
     position: absolute;
-    top: 10%;
-    left: 5%;
-    width: 60%;
-    height: 60%;
+    top: 15%;
+    left: 8%;
+    width: 45%;
+    height: 45%;
 }
 .annnai{
     font-size:25px;
