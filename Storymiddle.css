@@ -33,6 +33,8 @@ li a:hover:not(.active){
 
 }
 .subtitle {
+margin: 20px;
+padding: 50px;
 font-size: 45px;
 font-weight: bold;
 animation-name: fadein;
