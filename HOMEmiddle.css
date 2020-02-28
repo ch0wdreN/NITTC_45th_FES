@@ -1,84 +1,89 @@
 body {
-    background-color:#1a1717;
+  background-color: #1a1717;
 }
-ul{
-    list-style-type: none;
-    margin:0;
-    padding:0;
-    overflow:hidden;
-    background-color:black;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
 }
-li{
-    float: left;
-    border-right:1px solid darkred;
+li {
+  float: left;
+  border-right: 1px solid darkred;
 }
-li:last-child{
-   border-right:none;
+li:last-child {
+  border-right: none;
 }
-li a{
-    display:block;
-    color:white;
-    text-align: center;
-    padding:14px 16px;
-    text-decoration: noen;
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: noen;
 }
-li a:hover:not(.active){
-    background-color: darkred;
+li a:hover:not(.active) {
+  background-color: darkred;
 }
-.daimei{
-    font-size: 75px;
-    text-align: center;
-
+.daimei {
+  font-size: 75px;
+  text-align: center;
 }
 .subtitle {
-font-size: 35px;
-font-weight: bold;
-animation-name: fadein;
-animation-duration: 3s;
-text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  animation-name: fadein;
+  animation-duration: 3s;
+  text-align: center;
 }
 @keyframes fadein {
-from {
-opacity: 0;
-transform: translateY(20px);
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-to {
-opacity: 1;
-transform: translateY(0);
+p {
+  background: -webkit-linear-gradient(
+    top,
+    #cccccc 0%,
+    #990000 50%,
+    #660033 51%,
+    #440000 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+.frame {
+  opacity: 0.3;
+  display: inline-block;
+  position: relative;
 }
-p{
-    background: -webkit-linear-gradient(top,#CCCCCC 0%, #990000 50%, #660033 51%, #440000 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.frame:after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 20px #1a1717, inset 0 0 20px #1a1717,
+    inset 0 0 20px #1a1717, inset 0 0 20px #1a1717;
 }
-.frame{
-    opacity: 0.3;
-    display:inline-block;
-    position:relative;
+.naiyou {
+  font-size: 30px;
+  color: darkred;
+  position: absolute;
+  top: 50%;
+  left: 35%;
 }
-.frame:after{
-    position:absolute;
-    display:block;
-    content: "";
-    top: 0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    box-shadow:inset 0 0 20px #1a1717,inset 0 0 20px #1a1717,inset 0 0 20px #1a1717,inset 0 0 20px #1a1717;
-}
-.naiyou{
-    font-size:30px;
-    color:darkred;
-    position: absolute;
-    top:50%;
-    left:35%;
-
-}
-.anata{
-    font-size: 45px;
-    color: #330066;
-    background: -webkit-linear-gradient(0deg, #40E0D0, #660099, #330099);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.anata {
+  font-size: 45px;
+  color: #330066;
+  background: -webkit-linear-gradient(0deg, #40e0d0, #660099, #330099);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
