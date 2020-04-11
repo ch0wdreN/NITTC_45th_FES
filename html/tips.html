@@ -1,61 +1,60 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <title>ヒント/高専祭・お化け屋敷</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-        <link rel="stylesheet" href="../css/Tipswide.css" media="screen and (min-width:1024px)">
-        <link rel="stylesheet" href="../css/Tipsmiddle.css" media="screen and (min-width: 480px) and ( max-width:1024px)">
-        <link rel="stylesheet" href="../css/Tipssmall.css" media="screen and (max-width:480px)">
-    </head>
-    <body>
-        <ul>
-<<<<<<< HEAD:html/tips.html
-            <li><a href="HOME.html">Home</a></li>
-=======
-            <li><a href="Home.html">Home</a></li>
->>>>>>> origin/master:tips.html
-            <li><a href="story.html">Story</a></li>
-            <li><a class="active" href="tips.html">Tips</a></li>
-            <li><a href="Access.html">Access</a></li>
-        </ul>
-        <div class="daimei">
-            <div><span style="color:darkred">幽霊</span><span style="color:white">大病院<span></div>
-        </div>
-        <p class="subtitle">Tips</p>
-        <div class="popup" id="js-popup">
-          <div class="popup-inner">
-            <div class="close-btn" id="js-close-btn"><i class="fas fa-times"></i></div>
-            <a href="#"><img src="../img/nikki.png"></a>
-          </div>
-        <div class="black-background" id="js-black-bg"></div>
-        </div>
-        <div href="#" class="btn-square" id="js-show-popup">SHOW DIALY 01</div>
-        </div>
-        <p class="setumei">これは院長が自殺の直前に書いた日記の一部です。ここに病院からの脱出のヒントが隠されています。</p>
-        <script type="text/javascript">
-        function popupImage() {
-        var popup = document.getElementById('js-popup');
-        if(!popup) return;
 
-        var blackBg = document.getElementById('js-black-bg');
+<head>
+  <meta charset="UTF-8">
+  <title>ヒント/高専祭・お化け屋敷</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/Tipswide.css" media="screen and (min-width:1024px)">
+  <link rel="stylesheet" href="../css/Tipsmiddle.css" media="screen and (min-width: 480px) and ( max-width:1024px)">
+  <link rel="stylesheet" href="../css/Tipssmall.css" media="screen and (max-width:480px)">
+</head>
 
-        var blackBg = document.getElementById('js-black-bg');
-        var closeBtn = document.getElementById('js-close-btn');
-        var showBtn = document.getElementById('js-show-popup');
+<body>
+  <ul>
+    <li><a href="Home.html">Home</a></li>
+    <li><a href="story.html">Story</a></li>
+    <li><a class="active" href="tips.html">Tips</a></li>
+    <li><a href="Access.html">Access</a></li>
+  </ul>
+  <div class="daimei">
+    <div><span style="color:darkred">幽霊</span><span style="color:white">大病院<span></div>
+  </div>
+  <p class="subtitle">Tips</p>
+  <div class="popup" id="js-popup">
+    <div class="popup-inner">
+      <div class="close-btn" id="js-close-btn"><i class="fas fa-times"></i></div>
+      <a href="#"><img src="../img/nikki.png"></a>
+    </div>
+    <div class="black-background" id="js-black-bg"></div>
+  </div>
+  <div href="#" class="btn-square" id="js-show-popup">SHOW DIALY 01</div>
+  </div>
+  <p class="setumei">これは院長が自殺の直前に書いた日記の一部です。ここに病院からの脱出のヒントが隠されています。</p>
+  <script type="text/javascript">
+    function popupImage() {
+      var popup = document.getElementById('js-popup');
+      if (!popup) return;
 
-        closePopUp(blackBg);
-        closePopUp(closeBtn);
-        closePopUp(showBtn);
-        function closePopUp(elem) {
-          if(!elem) return;
-          elem.addEventListener('click', function() {
-            popup.classList.toggle('is-show');
-          });
-        }
-        }
-        popupImage();
-        </script>
-    </body>
+      var blackBg = document.getElementById('js-black-bg');
+
+      var blackBg = document.getElementById('js-black-bg');
+      var closeBtn = document.getElementById('js-close-btn');
+      var showBtn = document.getElementById('js-show-popup');
+
+      closePopUp(blackBg);
+      closePopUp(closeBtn);
+      closePopUp(showBtn);
+      function closePopUp(elem) {
+        if (!elem) return;
+        elem.addEventListener('click', function () {
+          popup.classList.toggle('is-show');
+        });
+      }
+    }
+    popupImage();
+  </script>
+</body>
+
 </html>
